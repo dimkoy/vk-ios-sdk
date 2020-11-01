@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A217A19254EAD7400ACBFA2 /* NewsFeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A217A18254EAD7400ACBFA2 /* NewsFeedParser.swift */; };
 		0A32D6AE23FB274E00EDB2E6 /* VKTaskOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A32D6AD23FB274E00EDB2E6 /* VKTaskOneTableViewController.m */; };
 		0A32D6B323FC3BB000EDB2E6 /* VKDocumentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A32D6B123FC3BB000EDB2E6 /* VKDocumentTableViewCell.m */; };
 		0A32D6B423FC3BB000EDB2E6 /* VKDocumentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A32D6B223FC3BB000EDB2E6 /* VKDocumentTableViewCell.xib */; };
@@ -154,6 +155,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A217A18254EAD7400ACBFA2 /* NewsFeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedParser.swift; sourceTree = "<group>"; };
 		0A32D6AC23FB274E00EDB2E6 /* VKTaskOneTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKTaskOneTableViewController.h; sourceTree = "<group>"; };
 		0A32D6AD23FB274E00EDB2E6 /* VKTaskOneTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKTaskOneTableViewController.m; sourceTree = "<group>"; };
 		0A32D6B023FC3BB000EDB2E6 /* VKDocumentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKDocumentTableViewCell.h; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				0AAB0A6C254DA7120032A41E /* PhoneConnectivityManager.swift */,
+				0A217A18254EAD7400ACBFA2 /* NewsFeedParser.swift */,
 			);
 			path = PhoneConnectivity;
 			sourceTree = "<group>";
@@ -683,6 +686,7 @@
 				0A98772E25489E99008E9A72 /* ContentView.swift in Sources */,
 				0A98773425489E99008E9A72 /* ComplicationController.swift in Sources */,
 				0A98772C25489E99008E9A72 /* VKSDKTestApplicationApp.swift in Sources */,
+				0A217A19254EAD7400ACBFA2 /* NewsFeedParser.swift in Sources */,
 				0A98773225489E99008E9A72 /* NotificationView.swift in Sources */,
 				0A98774D254A0755008E9A72 /* CircleImage.swift in Sources */,
 			);

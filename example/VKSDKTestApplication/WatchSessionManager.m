@@ -49,18 +49,14 @@
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message replyHandler:(void(^)(NSDictionary<NSString *, id> *replyMessage))replyHandler {
     NSString *type = message[@"request"];
     if ([type isEqualToString: @"version"]) {
-        replyHandler(@{@"version": @"it works"});
+        VKRequest *feedRequest = [[VKApi newsfeed] get];
 
-        VKRequest *groupListRequest = [[VKApi groups] getExtended];
-
-//        [groupListRequest executeWithResultBlock:^(VKResponse *response) {
-//            self.groups = (VKGroups *)response.parsedModel;
-//            self.groups.items = [NSMutableArray arrayWithArray:[[self.groups.items reverseObjectEnumerator] allObjects]];
-//            [self.collectionView reloadData];
-//            [self loadIcons];
-//        } errorBlock:^(NSError *error) {
+        [feedRequest executeWithResultBlock:^(VKResponse *response) {
+            NSData *data = [response.responseString dataUsingEncoding:NSUTF8StringEncoding];
+            replyHandler([NSJSONSerialization JSONObjectWithData:data options:0 error:nil]);
+        } errorBlock:^(NSError *error) {
 //            [self showAlertWithMessage:[error description]];
-//        }];
+        }];
     }
 }
 

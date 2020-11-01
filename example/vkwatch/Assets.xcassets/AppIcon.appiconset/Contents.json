@@ -15,12 +15,14 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "IMG_9432 copy.jpg",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "IMG_9432 copy 5.jpg",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
@@ -41,6 +43,7 @@
       "subtype" : "40mm"
     },
     {
+      "filename" : "IMG_9432 copy 4.jpg",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -62,6 +65,7 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "IMG_9432 copy 3.jpg",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",

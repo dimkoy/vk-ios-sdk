@@ -24,14 +24,13 @@ final class PhoneConnectivityManager: NSObject, WCSessionDelegate {
     }
 
     func sendMessage() {
-        /**
-         *  The iOS device is within range, so communication can occur and the WatchKit extension is running in the
-         *  foreground, or is running with a high priority in the background (for example, during a workout session
-         *  or when a complication is loading its initial timeline data).
-         */
         if isReachable() {
             session.sendMessage(["request" : "version"], replyHandler: { (response) in
                 print(response)
+                if let string = response["response"] as? [String: Any] {
+                    let parser = NewsFeedParser()
+                    parser.parse(string)
+                }
             }, errorHandler: { (error) in
                 print("Error sending message: %@", error)
             })

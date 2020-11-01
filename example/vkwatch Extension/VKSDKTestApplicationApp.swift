@@ -18,19 +18,16 @@ struct VKSDKTestApplicationApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                VStack {
-                    PostView(post: PostModel(id: 0, postAuhtor: "Nikita puzankov", forrmatedDate: "28 Oct at 20:30"))
-                    Button(action: {
-                        connectovityManager.sendMessage()
-                    }) {
-                        Text("send")
-                    }
+                List(PostModel.mock(), id: \.id) { item in
+                    PostView(post: item)
                 }
             }
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
+
+    
 }
 
 struct VKSDKTestApplicationApp_Previews: PreviewProvider {

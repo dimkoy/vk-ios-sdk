@@ -6,15 +6,15 @@
 //  Copyright © 2020 VK. All rights reserved.
 //
 
-#import "VKApiFeed.h"
+#import "VKApiNewsfeed.h"
 
-@implementation VKApiFeed
+@implementation VKApiNewsfeed
 
 - (VKRequest *)get {
     return [self prepareRequestWithMethodName:@"get"
                                    parameters:
             @{
-                VK_API_OWNER_ID : @"post,photo,photo_tag,wall_photo"
+                VK_API_OWNER_ID : @"post"
             }];
 
 }

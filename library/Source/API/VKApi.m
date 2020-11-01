@@ -62,8 +62,8 @@
     return [VKApiFave new];
 }
 
-+ (VKApiFeed *)feed {
-    return [VKApiFeed new];
++ (VKApiNewsfeed *)newsfeed {
+    return [VKApiNewsfeed new];
 }
 
 + (VKRequest *)requestWithMethod:(NSString *)method

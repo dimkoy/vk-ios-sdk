@@ -15,9 +15,9 @@
 		0A5C61BA240B068F007E30FF /* VKApiMarket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C61B8240B068F007E30FF /* VKApiMarket.m */; };
 		0A5C61BB240B068F007E30FF /* VKApiMarket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C61B8240B068F007E30FF /* VKApiMarket.m */; };
 		0A5C61BC240B0701007E30FF /* VKApiMarket.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 0A5C61B7240B068F007E30FF /* VKApiMarket.h */; };
-		0AAB0A7B254DBDE60032A41E /* VKApiFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAB0A79254DBDE60032A41E /* VKApiFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AAB0A7C254DBDE60032A41E /* VKApiFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB0A7A254DBDE60032A41E /* VKApiFeed.m */; };
-		0AAB0A7E254DBDE60032A41E /* VKApiFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB0A7A254DBDE60032A41E /* VKApiFeed.m */; };
+		0AAB0A7B254DBDE60032A41E /* VKApiNewsfeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAB0A79254DBDE60032A41E /* VKApiNewsfeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AAB0A7C254DBDE60032A41E /* VKApiNewsfeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB0A7A254DBDE60032A41E /* VKApiNewsfeed.m */; };
+		0AAB0A7E254DBDE60032A41E /* VKApiNewsfeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB0A7A254DBDE60032A41E /* VKApiNewsfeed.m */; };
 		0AE08B922404530600C44A61 /* VKApiDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE08B912404530600C44A61 /* VKApiDatabase.m */; };
 		0AE08B932404531800C44A61 /* VKApiDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE08B902404530600C44A61 /* VKApiDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AE08B942404532100C44A61 /* VKApiDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE08B912404530600C44A61 /* VKApiDatabase.m */; };
@@ -353,8 +353,8 @@
 		0A5362A1240BDDDF00B66F81 /* VKApiFave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKApiFave.m; sourceTree = "<group>"; };
 		0A5C61B7240B068F007E30FF /* VKApiMarket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKApiMarket.h; sourceTree = "<group>"; };
 		0A5C61B8240B068F007E30FF /* VKApiMarket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKApiMarket.m; sourceTree = "<group>"; };
-		0AAB0A79254DBDE60032A41E /* VKApiFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKApiFeed.h; sourceTree = "<group>"; };
-		0AAB0A7A254DBDE60032A41E /* VKApiFeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKApiFeed.m; sourceTree = "<group>"; };
+		0AAB0A79254DBDE60032A41E /* VKApiNewsfeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKApiNewsfeed.h; sourceTree = "<group>"; };
+		0AAB0A7A254DBDE60032A41E /* VKApiNewsfeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKApiNewsfeed.m; sourceTree = "<group>"; };
 		0AE08B902404530600C44A61 /* VKApiDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKApiDatabase.h; sourceTree = "<group>"; };
 		0AE08B912404530600C44A61 /* VKApiDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKApiDatabase.m; sourceTree = "<group>"; };
 		15DF536A232BBBE600593625 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -671,8 +671,8 @@
 				1ACA64D734A10AC2CD085F88 /* VKApiUsers.m */,
 				1ACA671DB7C59D529BB25E7E /* VKApiWall.h */,
 				1ACA6D5C2E0E59A23C3D3B4C /* VKApiWall.m */,
-				0AAB0A79254DBDE60032A41E /* VKApiFeed.h */,
-				0AAB0A7A254DBDE60032A41E /* VKApiFeed.m */,
+				0AAB0A79254DBDE60032A41E /* VKApiNewsfeed.h */,
+				0AAB0A7A254DBDE60032A41E /* VKApiNewsfeed.m */,
 				0AE08B902404530600C44A61 /* VKApiDatabase.h */,
 				0AE08B912404530600C44A61 /* VKApiDatabase.m */,
 				0A5C61B7240B068F007E30FF /* VKApiMarket.h */,
@@ -870,7 +870,7 @@
 				F346710E1B8B7D07003EF74B /* VKRequestsScheduler.h in Headers */,
 				F346710A1B8B7D07003EF74B /* VKOperation.h in Headers */,
 				8F99D6351C42C6010006DB03 /* VKApiDocs.h in Headers */,
-				0AAB0A7B254DBDE60032A41E /* VKApiFeed.h in Headers */,
+				0AAB0A7B254DBDE60032A41E /* VKApiNewsfeed.h in Headers */,
 				F34671381B8B7D07003EF74B /* VKSharedTransitioningObject.h in Headers */,
 				F34671061B8B7D07003EF74B /* VKJSONOperation.h in Headers */,
 			);
@@ -1100,7 +1100,7 @@
 				F346710F1B8B7D07003EF74B /* VKRequestsScheduler.m in Sources */,
 				F34670F41B8B7D07003EF74B /* VKSdk.m in Sources */,
 				F34671091B8B7D07003EF74B /* VKObject.m in Sources */,
-				0AAB0A7E254DBDE60032A41E /* VKApiFeed.m in Sources */,
+				0AAB0A7E254DBDE60032A41E /* VKApiNewsfeed.m in Sources */,
 				F346712A1B8B7D07003EF74B /* VKApiObjectArray.m in Sources */,
 				F34670E51B8B7CE4003EF74B /* VKApiCaptcha.m in Sources */,
 			);
@@ -1180,7 +1180,7 @@
 				1ACA6846480F59C3AF41B4AE /* VKUploadWallPhotoRequest.m in Sources */,
 				1ACA68336BEF00F13DEDA870 /* VKUploadMessagesPhotoRequest.m in Sources */,
 				1ACA695AB1344826A2F18CE3 /* VKUploadImage.m in Sources */,
-				0AAB0A7C254DBDE60032A41E /* VKApiFeed.m in Sources */,
+				0AAB0A7C254DBDE60032A41E /* VKApiNewsfeed.m in Sources */,
 				1ACA69BE9C47B55CA23C6B8A /* VKImageParameters.m in Sources */,
 				1ACA61AF9F91E61D27B5DC81 /* VKSharedTransitioningObject.m in Sources */,
 			);

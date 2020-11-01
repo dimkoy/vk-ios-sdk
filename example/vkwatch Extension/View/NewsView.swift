@@ -11,8 +11,8 @@ import SwiftUI
 struct NewsView: View {
     var body: some View {
         List{
-            PostView(post: PostModel(id: 0, postAuhtor: "Nikita puzankov", forrmatedDate: "28 Oct at 20:30"))
-            PostView(post: PostModel(id: 0, postAuhtor: "Nikita puzankov", forrmatedDate: "28 Oct at 20:30"))
+            PostView(post: PostModel.mock()[0])
+            PostView(post: PostModel.mock()[1])
         }
     }
 }
